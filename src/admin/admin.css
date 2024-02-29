@@ -1,0 +1,298 @@
+
+
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card-login {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  width: 360px;
+  flex: 0.5 1 100px;
+}
+
+.card-login {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-login .label-float input {
+  width: 100%;
+  padding: 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #000;
+  background-color: transparent;
+  outline: 0;
+  transition: 0.1s linear;
+  min-width: 180px;
+  font-size: 16px;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 15px;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  display: flex;
+  align-items: center;
+}
+
+.label-float label {
+  position: absolute;
+  top: 40%;
+  transition: 0.3s ease-out;
+
+}
+
+.card-login .label-float input:focus + label,
+.card-login .label-float input:valid + label {
+  top: 0px;
+  font-size: 10pt;
+}
+
+input[type="submit"] {
+  background-color: transparent;
+
+  padding: 10px 20px;
+  outline: none;
+
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+input[type="submit"]:hover {
+  color: #fff;
+}
+
+.justify {
+  display: flex;
+  justify-content: center;
+}
+
+.label-float img {
+  position: absolute;
+  width: 20px;
+  right: 0;
+  cursor: pointer;
+}
+.label-float img:hover {
+  position: absolute;
+  width: 20px;
+  right: 0;
+  cursor: pointer;
+}
+
+
+.story-div {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 30px;
+}
+.story-form{
+  border: 1px dashed black;
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  margin-top: 20px;
+}
+
+
+.story-form {
+  display: grid;
+  place-items: center;
+ 
+}
+
+.story-type {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+   margin-top: 20px;
+}
+
+.story-type:focus {
+  border-color: #BB0000; /* Change border color on focus */
+}
+
+.story-type option {
+  padding: 8px;
+  background-color: #fff;
+  color: #333;
+}
+
+.story-type option:hover {
+  background-color: #eee; /* Change background color on hover */
+}
+
+.url input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none; /* Remove default outline */
+  width: 100%;
+   margin-top: 20px;
+   /* Make full width within the div */
+}
+
+.url textarea[type="text"] {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none; /* Remove default outline */
+  width: 100%;
+   margin-top: 20px;
+   /* Make full width within the div */
+}
+
+.url input[type="text"]:focus {
+  border-color: #BB0000; /* Change border color on focus */
+}
+
+.url input[type="text"]::-webkit-input-placeholder {
+  color: #ccc; /* Adjust placeholder color */
+}
+
+.url input[type="text"]:-moz-placeholder {
+  color: #ccc; /* Firefox compatibility */
+}
+
+.url input[type="text"]::-ms-input-placeholder {
+  color: #ccc; /* Internet Explorer compatibility */
+}
+
+.url input[type="text"]::placeholder {
+  color: #ccc; /* Modern browsers */
+}
+
+.url textarea[type="text"]:focus {
+  border-color: #BB0000; /* Change border color on focus */
+}
+
+.url textarea[type="text"]::-webkit-textarea-placeholder {
+  color: #ccc; /* Adjust placeholder color */
+}
+
+.url textarea[type="text"]:-moz-placeholder {
+  color: #ccc; /* Firefox compatibility */
+}
+
+.url textarea[type="text"]::-ms-textarea-placeholder {
+  color: #ccc; /* Internet Explorer compatibility */
+}
+
+.url textarea[type="text"]::placeholder {
+  color: #ccc; /* Modern browsers */
+}
+
+.story-form button {
+  background-color: #FE2E2E ; /* Blue theme */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /* Indicate clickable element */
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+  margin: 20px 0;
+}
+
+.story-form button:hover {
+  background-color: #BB0000 ; /* Darker blue on hover */
+}
+
+.story-form .url,
+.story-form select,
+.story-form button {
+ 
+  width: 70%; /* Make form elements take up full width */
+}
+
+.loader {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #FF3D00;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  border: 2px solid green;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.data{
+  border: 2px solid #ccc;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 20px;
+  position: relative;
+
+} 
+
+.data .copy{
+  position: absolute;
+  top:0;
+  right: 0;
+ cursor: pointer;
+ font-size: 20px;
+ font-weight: 900;
+ margin: 5px;
+}
+
+.data i {
+  background-color: green;
+  width: 50px;
+  height: 50px;
+}
+
+.card {
+  position: relative;
+}
+
+.card .delete{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   margin: 10px;
+}
+
